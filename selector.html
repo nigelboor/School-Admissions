@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+        Remove this if you use the .htaccess -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>selector</title>
+        <meta name="description" content="">
+        <meta name="author" content="nboor">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    </head>
+
+    <body>
+        <script>
+			function reveal(value) {
+				var related_size = document.getElementById("related_size_content");
+				var related_academy = document.getElementById("related_academy_content");
+				var related_full = document.getElementById("related_full_content");
+				related_size.style.display = "none";
+				related_academy.style.display = "none";
+				related_full.style.display = "none";
+				if (value == "size") {
+					related_size.style.display = "block";
+				};
+				if (value == "academy") {
+					related_academy.style.display = "block";
+				};
+				if (value == "full") {
+					related_full.style.display = "block";
+				};
+			};
+        </script>
+
+        <p>
+            There are a small percentage of families each year who are disappointed where the school cannot offer a place. If this happens to you, the School Admissions Team can give you information on school admission appeals and can also give advice on other schools that may have places available. Please feel free to contact us on email <a href="mailto:school.admissions@gloucestershire.gov.uk">school.admissions@gloucestershire.gov.uk</a> or call 01452 425407.
+        </p>
+        <p>
+            If you feel you would like to pursue the matter further, you can have your case heard by an Appeal Panel that is independent of the Local Authority or, in the case of trust, foundation or voluntary aided schools and academies, by an Appeal Panel that is independent of the school's admission authority.
+        </p>
+        <p>
+            <strong>Choose your school from the list below to see more details.</strong>
+        </p>
+        <form action="#">
+            <select id="rejection" onchange="reveal(value)">
+                <option value='choose' selected>Please select your school</option>
+                <option value='size'>Abbeymead Primary School</option>
+                <option value='academy'>Amberley Parochial School</option>
+                <option value='academy'>Ampney Crucis Church of England Primary School</option>
+                <option value='academy'>Andoversford Primary School</option>
+                <option value='academy'>Ann Cam Church of England Primary School</option>
+                <option value='full'>Ann Edwards Church of England Primary School</option>
+                <option value='full'>Ashchurch Primary School</option>
+                <option value='full'>Ashleworth Church of England Primary School</option>
+                <option value='full'>Avening Primary School</option>
+                <option value='size'>Aylburton Church of England Primary School</option>
+                <option value='academy'>Barnwood Church of England Primary School</option>
+                <option value='size'>Beech Green Primary School</option>
+                <option value='size'>Benhall Infant School</option>
+                <option value='size'>Berkeley Primary School</option>
+                <option value='academy'>Berry Hill Primary School</option>
+                <option value='full'>Bibury Church of England Primary School</option>
+                <option value='size'>Birdlip Primary School</option>
+                <option value='academy'>Bishops Cleeve Primary School</option>
+                <option value='full'>Bisley Blue Coat Church of England Primary School</option>
+                <option value='full'>Blakeney Primary School</option>
+                <option value='full'>Bledington Primary School</option>
+                <option value='academy'>Blockley Church of England Primary School</option>
+                <option value='academy'>Blue Coat Church of England Primary School</option>
+                <option value='academy'>Bourton-On-the-Water Primary School</option>
+                <option value='size'>Bream Church of England Primary School</option>
+                <option value='academy'>Brimscombe Church of England (VA) Primary School</option>
+                <option value='academy'>Brockworth Primary Academy</option>
+                <option value='academy'>Bromesberrow St Mary's Church of England (Aided) Primary School</option>
+                <option value='academy'>Bussage Church of England Primary School</option>
+                <option value='size'>Callowell Primary School</option>
+                <option value='size'>Calton Primary School</option>
+                <option value='size'>Cam Everlands Primary School</option>
+                <option value='academy'>Cam Hopton Church of England Primary School</option>
+                <option value='size'>Cam Woodfield Infant School</option>
+                <option value='academy'>Cam Woodfield Junior School</option>
+                <option value='academy'>Carrant Brook Junior School</option>
+                <option value='size'>Cashes Green Primary School</option>
+                <option value='size'>Castle Hill Primary School</option>
+                <option value='size'>Chalford Hill Primary School</option>
+                <option value='academy'>Charlton Kings Infant School</option>
+                <option value='academy'>Charlton Kings Junior School</option>
+                <option value='size'>Chesterton Primary School</option>
+                <option value='academy'>Christ Church Church of England Primary School (Chalford)</option>
+                <option value='academy'>Christ Church Church of England Primary School (Chelt)</option>
+                <option value='full'>Churcham Primary School</option>
+                <option value='size'>Churchdown Parton Manor Infant School</option>
+                <option value='full'>Churchdown Parton Manor Junior</option>
+                <option value='academy'>Churchdown Village Infant School</option>
+                <option value='full'>Churchdown Village Junior School</option>
+                <option value='size'>Cirencester Primary School</option>
+                <option value='full'>Clearwell Church of England Primary School</option>
+                <option value='full'>Coaley Church of England Primary School</option>
+                <option value='size'>Coalway Community Infant School</option>
+                <option value='full'>Coalway Junior School</option>
+                <option value='full'>Coberley Primary School</option>
+                <option value='full'>Cold Aston Church of England Primary School</option>
+                <option value='size'>Coney Hill Community Primary School</option>
+                <option value='academy'>Coopers Edge Primary School</option>
+                <option value='academy'>Cranham Church of England Primary School</option>
+                <option value='full'>Deerhurst and Apperley Church of England Primary School</option>
+                <option value='size'>Dinglewell Infant School</option>
+                <option value='full'>Dinglewell Junior School</option>
+                <option value='full'>Down Ampney Church of England Primary School</option>
+                <option value='full'>Drybrook Primary School</option>
+                <option value='size'>Dunalley Primary School</option>
+                <option value='academy'>Dursley Church of England Primary School</option>
+                <option value='full'>Eastcombe Primary School</option>
+                <option value='size'>Eastington Primary School</option>
+                <option value='full'>Ellwood Primary School</option>
+                <option value='size'>Elmbridge Infant School</option>
+                <option value='full'>Elmbridge Junior School</option>
+                <option value='full'>English Bicknor Church of England Primary School</option>
+                <option value='size'>Fairford Church of England Primary School</option>
+                <option value='academy'>Field Court Church of England Infant Academy</option>
+                <option value='academy'>Field Court Junior Academy</option>
+                <option value='academy'>Finlay Community School</option>
+                <option value='academy'>Forest View Primary School</option>
+                <option value='full'>Foxmoor Primary School</option>
+                <option value='full'>Gardners Lane Primary School</option>
+                <option value='full'>Gastrells Community Primary School</option>
+                <option value='academy'>Glebe Infants' School</option>
+                <option value='size'>Glenfall Community Primary School</option>
+                <option value='size'>Gloucester Road Primary School</option>
+                <option value='academy'>Gotherington Primary Academy</option>
+                <option value='academy'>Grange Primary School</option>
+                <option value='size'>Grangefield Primary School</option>
+                <option value='full'>Great Rissington Primary School</option>
+                <option value='size'>Greatfield Park Primary School</option>
+                <option value='academy'>Gretton Primary Academy</option>
+                <option value='academy'>Hardwicke Parochial Primary School</option>
+                <option value='full'>Haresfield Church of England Primary School</option>
+                <option value='size'>Harewood Infant School</option>
+                <option value='academy'>Harewood Junior School</option>
+                <option value='size'>Hartpury Church of England Primary School</option>
+                <option value='size'>Hatherley Infant School</option>
+                <option value='full'>Hatherop Church of England Primary School</option>
+                <option value='size'>Hempsted Church of England Primary School</option>
+                <option value='academy'>Heron Primary School</option>
+                <option value='size'>Hesters Way Primary School</option>
+                <option value='academy'>Highnam Church of England Primary Academy</option>
+                <option value='academy'>Hillesley Church of England Primary School</option>
+                <option value='size'>Hillview Primary School</option>
+                <option value='academy'>Holy Apostles' Church of England Primary School</option>
+                <option value='size'>Holy Trinity Church of England Primary School</option>
+                <option value='full'>Hope Brook Church of England Primary School</option>
+                <option value='academy'>Horsley Church of England Primary School</option>
+                <option value='academy'>Huntley Church of England Primary School</option>
+                <option value='full'>Innsworth Infant School</option>
+                <option value='full'>Innsworth Junior School</option>
+                <option value='full'>Isbourne Valley School</option>
+                <option value='full'>Kemble Primary School</option>
+                <option value='full'>Kempsford Church of England Primary School</option>
+                <option value='size'>King's Stanley Church of England Primary School</option>
+                <option value='size'>Kingsholm Church of England Primary School</option>
+                <option value='size'>Kingsway Primary School</option>
+                <option value='size'>Kingswood Primary School</option>
+                <option value='size'>Lakefield Church of England Primary School</option>
+                <option value='size'>Lakeside Primary School</option>
+                <option value='size'>Leckhampton Church of England Primary School</option>
+                <option value='full'>Leighterton Primary School</option>
+                <option value='academy'>Leonard Stanley Church of England Primary School</option>
+                <option value='size'>Linden Primary School</option>
+                <option value='full'>Littledean Church of England Primary School</option>
+                <option value='full'>Longborough Church of England Primary School</option>
+                <option value='size'>Longlevens Infant School</option>
+                <option value='full'>Longlevens Junior School</option>
+                <option value='full'>Longney Church of England Primary School</option>
+                <option value='full'>Lydbrook Primary School</option>
+                <option value='size'>Lydney Church of England Community School (VC)</option>
+                <option value='size'>Meadowside Primary School</option>
+                <option value='size'>Meysey Hampton Church of England Primary School</option>
+                <option value='full'>Mickleton Primary School</option>
+                <option value='academy'>Minchinhampton School</option>
+                <option value='academy'>Minsterworth Church of England Primary School</option>
+                <option value='academy'>Miserden Church of England Primary School</option>
+                <option value='academy'>Mitcheldean Endowed Primary School</option>
+                <option value='academy'>Mitton Manor Primary School</option>
+                <option value='academy'>Moat Primary School</option>
+                <option value='size'>Nailsworth Church of England Primary School</option>
+                <option value='size'>Naunton Park Primary School</option>
+                <option value='academy'>Newnham St Peter's Church Of England Primary School</option>
+                <option value='full'>North Cerney Church of England Primary School</option>
+                <option value='academy'>North Nibley Church of England Primary School</option>
+                <option value='full'>Northleach Church of England Primary School</option>
+                <option value='size'>Northway Infant School</option>
+                <option value='full'>Norton Church of England Primary School</option>
+                <option value='full'>Oak Hill Church Of England Primary School</option>
+                <option value='academy'>Oakridge Parochial School</option>
+                <option value='academy'>Oakwood Primary School</option>
+                <option value='academy'>Offa's Mead Academy</option>
+                <option value='full'>Park Junior School</option>
+                <option value='full'>Parkend Primary School</option>
+                <option value='full'>Pauntley Church of England Primary School</option>
+                <option value='academy'>Picklenash Junior School</option>
+                <option value='full'>Pillowell Community Primary School</option>
+                <option value='academy'>Powell's Church of England Primary School</option>
+                <option value='academy'>Prestbury St Mary's Church of England Junior School</option>
+                <option value='academy'>Primrose Hill Church of England Primary School</option>
+                <option value='size'>Queen Margaret Primary School and Children's Centre</option>
+                <option value='full'>Randwick Church of England Primary School</option>
+                <option value='full'>Redbrook Church of England Primary School</option>
+                <option value='academy'>Redmarley Church of England Primary Academy</option>
+                <option value='academy'>Robinswood Primary Academy</option>
+                <option value='size'>Rodborough Community Primary School</option>
+                <option value='full'>Rodmarton School</option>
+                <option value='size'>Rowanfield Infant School</option>
+                <option value='academy'>Rowanfield Junior Academy</option>
+                <option value='full'>Ruardean Church of England Primary School</option>
+                <option value='academy'>Sapperton Church of England Primary School</option>
+                <option value='academy'>Severn View Academy</option>
+                <option value='academy'>Severnbanks Primary School</option>
+                <option value='full'>Sharpness Primary School</option>
+                <option value='full'>Sheepscombe Primary School</option>
+                <option value='full'>Sherborne Church of England Primary School</option>
+                <option value='size'>Shurdington Church of England Primary School</option>
+                <option value='full'>Siddington Church of England Primary School</option>
+                <option value='full'>Slimbridge Primary School</option>
+                <option value='full'>Soudley School</option>
+                <option value='full'>Southrop Church of England Primary School</option>
+                <option value='academy'>Springbank Primary Academy</option>
+                <option value='academy'>St Andrew's Church of England Primary School</option>
+                <option value='academy'>St Anthony's School</option>
+                <option value='academy'>St Briavels Parochial Church of England Primary School</option>
+                <option value='academy'>St Catharine's Catholic Primary School</option>
+                <option value='academy'>St David's Primary School</option>
+                <option value='academy'>St Dominic's Catholic Primary School</option>
+                <option value='academy'>St James and Ebrington Church of England Primary Schools</option>
+                <option value='size'>St James' Church of England Primary School</option>
+                <option value='full'>St James Church of England Junior School</option>
+                <option value='academy'>St John's Church of England Primary Academy (Coleford)</option>
+                <option value='full'>St John's Church of England Primary School (Chelt)</option>
+                <option value='academy'>St Joseph's Catholic Primary School</option>
+                <option value='academy'>St Lawrence Church of England Primary School</option>
+                <option value='academy'>St Mark's Church of England Junior School</option>
+                <option value='academy'>St Mary's Catholic Primary Academy</option>
+                <option value='academy'>St Mary's Church of England Infant School</option>
+                <option value='academy'>St Mary's Church of England VA Primary School</option>
+                <option value='academy'>St Matthew's Church of England Primary School</option>
+                <option value='size'>St Paul's Church of England Primary School</option>
+                <option value='academy'>St Peter's Catholic Primary School</option>
+                <option value='academy'>St Thomas More Catholic Primary School</option>
+                <option value='full'>St White's Primary School</option>
+                <option value='academy'>Staunton and Corse Church of England Primary School</option>
+                <option value='full'>Steam Mills Primary School</option>
+                <option value='academy'>Stone With Woodford Church of England Primary School</option>
+                <option value='full'>Stow-On-The-Wold Primary School</option>
+                <option value='size'>Stratton Church of England Primary School</option>
+                <option value='full'>Stroud Valley Community Primary School</option>
+                <option value='full'>Swell Church of England Primary School</option>
+                <option value='size'>Swindon Village Primary School</option>
+                <option value='size'>Temple Guiting Church of England School</option>
+                <option value='size'>Tewkesbury Church of England Primary School</option>
+                <option value='academy'>The British School</option>
+                <option value='academy'>The Catholic School of Saint Gregory the Great</option>
+                <option value='full'>The Croft Primary School</option>
+                <option value='size'>The John Moore Primary School</option>
+                <option value='size'>The Park Infant School</option>
+                <option value='academy'>The Rosary Catholic Primary Academy</option>
+                <option value='full'>Thrupp School</option>
+                <option value='size'>Tibberton Community Primary School</option>
+                <option value='academy'>Tirlebrook Primary School</option>
+                <option value='full'>Tredington Community Primary School</option>
+                <option value='full'>Tredworth Infant School</option>
+                <option value='full'>Tredworth Junior School</option>
+                <option value='size'>Tuffley Primary School</option>
+                <option value='size'>Tutshill Church of England Primary School</option>
+                <option value='full'>Twyning School</option>
+                <option value='full'>Uley Church of England Primary School</option>
+                <option value='size'>Uplands Community Primary School</option>
+                <option value='size'>Upton St Leonards Church of England Primary School</option>
+                <option value='full'>Walmore Hill Primary School</option>
+                <option value='academy'>Warden Hill Primary School</option>
+                <option value='size'>Watermoor Church of England Primary School</option>
+                <option value='academy'>Waterwells Primary Academy</option>
+                <option value='academy'>Westbury-On-Severn Church of England Primary School</option>
+                <option value='size'>Whiteshill Primary School</option>
+                <option value='size'>Whitminster Endowed Church of England Primary School</option>
+                <option value='size'>Widden Primary School</option>
+                <option value='full'>Willersey Church of England Primary School</option>
+                <option value='academy'>Winchcombe Abbey Church of England Primary School</option>
+                <option value='academy'>Withington Church of England Primary School</option>
+                <option value='academy'>Woodchester Endowed Church of England Aided Primary School</option>
+                <option value='full'>Woodmancote School</option>
+                <option value='full'>Woodside Primary School</option>
+                <option value='full'>Woolaston Primary School</option>
+                <option value='full'>Yorkley Primary School</option>
+            </select>
+        </form>
+
+        <div id="related_size_content" style="display: none;">
+            <h3>Key Stage One refusal</h3><h4>Part A of the Appeals Guide explains the reasons for a Key Stage One refusal. </h4>
+            <p>
+                The way in which the classes are organised within this school means that your application has been refused because the class in which the reception children are taught has reached its legal limit of 30 children per class. Children who have been offered places in the reception year group have been offered in line with the admission arrangements for the school. The children who have been offered places had a stronger claim to a place at the school. This means that the school had reached its published admission number before your child's position on the over subscription criteria. The year group is now full.
+            </p>
+            <p>
+                The School Standards and Framework Act 1998, requires infant classes (Reception, Year 1 and Year 2) to consist of no more than 30 pupils.
+            </p>
+            <p>
+                A place at this school has therefore been refused under Section 1(6) of the Schools Standards and Framework Act 1998 (duty of Local Education Authorities and Governing Bodies to comply with infant class sizes), and Section 86 of the same Act, on the grounds that compliance with the preference would prejudice the provision of efficient education and the efficient use of resources, by failing to limit all infant classes to a maximum of 30 pupils.
+            </p>
+            <p>
+                As the Admissions Authority for the school, we are unable to offer your child a place at this school in accordance with the Infant Class Size Prejudice.
+            </p>
+            <p>
+                Once you have read the Appeals Guide, please complete the Appeal Application Form or contact us for a paper copy of the Notice of Appeal Form:
+            </p>
+            <p>
+                <a class="underlinelink inlinemedia id59508 typeadobe_acrobat" href="http://www.gloucestershire.gov.uk/CHttpHandler.ashx?id=59508&p=0" title="download">Appeals Guide - about school admission appeals [PDF: 128kb]</a>
+            </p>
+            <p>
+                <a class="underlinelink inlinemedia id60625 typeadobe_acrobat" href="http://www.gloucestershire.gov.uk/CHttpHandler.ashx?id=60625&p=0" title="download">Appeal Application Form/Notice of Appeal [PDF: 13kb]</a>
+            <p>
+                Completed appeals paperwork should be returned to <a href="mailto:democratic.services@gloucestershire.gov.uk">democratic.services@gloucestershire.gov.uk</a>
+            </p>
+            <h4>What happens next?</h4>
+            <ul>
+                <li>
+                    Once your appeal form has been received it will be logged and your appeal panel and date will be arranged. A clerk to the Appeal Panel will send you a letter giving the date, time and place of the appeal hearing approximately two weeks before the hearing. Appeal Hearings are due to start in the second week of June.
+                </li>
+                <li>
+                    Before the appeal hearing, you will also receive a written statement from the Admission Authority for the school, which will give the reasons why your child was not allocated a place in the school you wanted.
+                </li>
+            </ul>
+            <hr />
+            <h2>Other Information</h2>
+            <p>
+                You should not wait for the outcome of an appeal about one school before deciding to appeal about another as appeals can be made for more than one school at the same time.
+            </p>
+            <p>
+                Parents who have appealed unsuccessfully for a particular school cannot appeal again for a place at the same school, in the same academic year, unless there have been significant and material changes in their circumstances.
+            </p>
+            <p>
+                Appeals for schools outside Gloucestershire should be made in accordance with the published admission arrangements of the local authority concerned.
+            </p>
+        </div>
+
+        <div id="related_academy_content" style="display: none;">
+            <h3>The school is it's own Admission Authority</h3><h4>If the Guide asks you to contact the school/academy directly, this is because the school is its own Admission Authority</h4>
+            <p>
+                The published admission number for this school has been reached by offering places to children in line with the admission arrangements for the school. These children had a stronger claim to a place at the school. This means that the school had reached its published admission number before your child's position on the over subscription criteria and the year group is now full.
+            </p>
+            <p>
+                You have a legal right to appeal for a place at the school. If you wish to appeal, you need to write to the Governors of the school directly. Please use the school's contact details but address any correspondence to the Governing Body of the school.
+            </p>
+        </div>
+
+        <div id="related_full_content" style="display: none;">
+            <h3>Overcrowding</h3><h4>Part B of the Appeals Guide explains the reasons for an Overcrowding Appeal.</h4>
+            <p>
+                The published admission number for this school has been reached by offering places to children in line with the admission arrangements for the school. These children had a stronger claim to a place at the school. This means that the school had reached its published admission number before your child's position on the over subscription criteria and the year group is now full.
+            </p>
+            <p>
+                If another child were added to the year group, this would lead to overcrowding or make overcrowding worse at the school. This will in turn cause problems with providing a high standard of education to pupils at the school.
+            </p>
+            <p>
+                In view of the fact Reception is full at this school has been refused for your child under the terms of Section 86 of the School Standards and Framework Act 1998, on the grounds that compliance with the preference would prejudice the provision of efficient education or the efficient use of resources for reasons for overcrowding.
+            </p>
+            <p>
+                Once you have read the Appeals Guide, please complete the Appeal Application Form or contact us for a copy of the Notice of Appeal Form:
+            </p>
+            <p>
+                <a class="underlinelink inlinemedia id59508 typeadobe_acrobat" href="http://www.gloucestershire.gov.uk/CHttpHandler.ashx?id=59508&p=0" title="download">Appeals Guide - about school admission appeals [PDF: 128kb]</a>
+            </p>
+            <p>
+                <a class="underlinelink inlinemedia id60625 typeadobe_acrobat" href="http://www.gloucestershire.gov.uk/CHttpHandler.ashx?id=60625&p=0" title="download">Appeal Application Form/Notice of Appeal [PDF: 13kb]</a>
+            <p>
+                Completed appeals paperwork should be returned to <a href="mailto:democratic.services@gloucestershire.gov.uk">democratic.services@gloucestershire.gov.uk</a>
+            </p>
+            <h4>What happens next?</h4>
+            <ul>
+                <li>
+                    Once your appeal form has been received it will be logged and your appeal panel and date will be arranged. A clerk to the Appeal Panel will send you a letter giving the date, time and place of the appeal hearing approximately two weeks before the hearing. Appeal Hearings are due to start in the second week of June.
+                </li>
+                <li>
+                    Before the appeal hearing, you will also receive a written statement from the Admission Authority for the school, which will give the reasons why your child was not allocated a place in the school you wanted.
+                </li>
+            </ul>
+            <hr />
+            <h2>Other Information</h2>
+            <p>
+                You should not wait for the outcome of an appeal about one school before deciding to appeal about another as appeals can be made for more than one school at the same time.
+            </p>
+            <p>
+                Parents who have appealed unsuccessfully for a particular school cannot appeal again for a place at the same school, in the same academic year, unless there have been significant and material changes in their circumstances.
+            </p>
+            <p>
+                Appeals for schools outside Gloucestershire should be made in accordance with the published admission arrangements of the local authority concerned.
+            </p>
+            <p>
+                Please complete and return your appeal form as soon as possible before 22 May 2015.
+            </p>
+            <p>
+                You may complete and return appeal paperwork before the outcome of the reconsideration decision as you can cancel your appeal request at any time by emailing <a href="mailto:democratic.services@gloucestershire.gov.uk">democratic.services@gloucestershire.gov.uk</a>
+            </p>
+        </div>
+    </body>
+</html>
